@@ -13,18 +13,7 @@
 		AB638FC61B54AD7100AD7620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB638FC41B54AD7100AD7620 /* Main.storyboard */; };
 		AB638FC81B54AD7100AD7620 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB638FC71B54AD7100AD7620 /* Images.xcassets */; };
 		AB638FCB1B54AD7100AD7620 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB638FC91B54AD7100AD7620 /* LaunchScreen.xib */; };
-		AB638FD71B54AD7100AD7620 /* CircleCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB638FD61B54AD7100AD7620 /* CircleCITests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB638FD11B54AD7100AD7620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB638FAF1B54AD7100AD7620 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB638FB61B54AD7100AD7620;
-			remoteInfo = CircleCI;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB638FB71B54AD7100AD7620 /* CircleCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +26,10 @@
 		AB638FC51B54AD7100AD7620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB638FC71B54AD7100AD7620 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB638FCA1B54AD7100AD7620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AB638FD01B54AD7100AD7620 /* CircleCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB638FD51B54AD7100AD7620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB638FD61B54AD7100AD7620 /* CircleCITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleCITests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB638FB41B54AD7100AD7620 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB638FCD1B54AD7100AD7620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				AB638FB91B54AD7100AD7620 /* CircleCI */,
-				AB638FD31B54AD7100AD7620 /* CircleCITests */,
 				AB638FB81B54AD7100AD7620 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				AB638FB71B54AD7100AD7620 /* CircleCI.app */,
-				AB638FD01B54AD7100AD7620 /* CircleCITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,23 +79,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AB638FD31B54AD7100AD7620 /* CircleCITests */ = {
-			isa = PBXGroup;
-			children = (
-				AB638FD61B54AD7100AD7620 /* CircleCITests.m */,
-				AB638FD41B54AD7100AD7620 /* Supporting Files */,
-			);
-			path = CircleCITests;
-			sourceTree = "<group>";
-		};
-		AB638FD41B54AD7100AD7620 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB638FD51B54AD7100AD7620 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +99,6 @@
 			productReference = AB638FB71B54AD7100AD7620 /* CircleCI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB638FCF1B54AD7100AD7620 /* CircleCITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB638FDD1B54AD7100AD7620 /* Build configuration list for PBXNativeTarget "CircleCITests" */;
-			buildPhases = (
-				AB638FCC1B54AD7100AD7620 /* Sources */,
-				AB638FCD1B54AD7100AD7620 /* Frameworks */,
-				AB638FCE1B54AD7100AD7620 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB638FD21B54AD7100AD7620 /* PBXTargetDependency */,
-			);
-			name = CircleCITests;
-			productName = CircleCITests;
-			productReference = AB638FD01B54AD7100AD7620 /* CircleCITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +110,6 @@
 				TargetAttributes = {
 					AB638FB61B54AD7100AD7620 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					AB638FCF1B54AD7100AD7620 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = AB638FB61B54AD7100AD7620;
 					};
 				};
 			};
@@ -189,7 +127,6 @@
 			projectRoot = "";
 			targets = (
 				AB638FB61B54AD7100AD7620 /* CircleCI */,
-				AB638FCF1B54AD7100AD7620 /* CircleCITests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +139,6 @@
 				AB638FC61B54AD7100AD7620 /* Main.storyboard in Resources */,
 				AB638FCB1B54AD7100AD7620 /* LaunchScreen.xib in Resources */,
 				AB638FC81B54AD7100AD7620 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB638FCE1B54AD7100AD7620 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB638FCC1B54AD7100AD7620 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB638FD71B54AD7100AD7620 /* CircleCITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB638FD21B54AD7100AD7620 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB638FB61B54AD7100AD7620 /* CircleCI */;
-			targetProxy = AB638FD11B54AD7100AD7620 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB638FC41B54AD7100AD7620 /* Main.storyboard */ = {
@@ -369,40 +283,6 @@
 			};
 			name = Release;
 		};
-		AB638FDE1B54AD7100AD7620 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CircleCITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI.app/CircleCI";
-			};
-			name = Debug;
-		};
-		AB638FDF1B54AD7100AD7620 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CircleCITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI.app/CircleCI";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,15 +300,6 @@
 			buildConfigurations = (
 				AB638FDB1B54AD7100AD7620 /* Debug */,
 				AB638FDC1B54AD7100AD7620 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB638FDD1B54AD7100AD7620 /* Build configuration list for PBXNativeTarget "CircleCITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB638FDE1B54AD7100AD7620 /* Debug */,
-				AB638FDF1B54AD7100AD7620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
