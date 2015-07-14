@@ -45,13 +45,13 @@ print_error()
 main()
 {
     local output_path="$PWD/build"
-    local developer_name=''
-    local appname=''
-    local provisioning_file=''
+    local developer_name='Thinh Xavi'
+    local appname='CircleCI'
+    local provisioning_file='fd892037-165e-4a45-bb10-33b19025e695'
     local provisioning_file_dir="$HOME/Library/MobileDevice/Provisioning Profiles"
     local xcode_scheme=''
     local xcode_workspace=''
-    local xcode_target=''
+    local xcode_target='CircleCI'
     local configuration='Release'
 
     local option

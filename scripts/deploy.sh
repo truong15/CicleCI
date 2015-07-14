@@ -7,7 +7,6 @@ message="Build: ${CIRCLE_BUILD_NUM}, Uploaded: $release_date"
 
 for config in "${configuration_list[@]}"; do
     output_path="$PWD/build/${config}"
-
     ./scripts/build-ipa.sh \
         -d "$DEVELOPER_NAME" -a "$APPNAME" \
         -p "$PROFILE_NAME" \
