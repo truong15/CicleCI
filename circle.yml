@@ -6,8 +6,8 @@ machine:
     XCODE_TARGET: CircleCI
     APPNAME: CircleCI
     DEPLOYGATE_USER_NAME: hiephuynh
-    DEVELOPER_NAME: "iPhone Distribution: Hiep Huynh Ngoc (YLRZZHWDN3)"
-    PROFILE_NAME: "b9f4c082-d347-476d-9425-9ec61c80c8fc.mobileprovision"
+    DEVELOPER_NAME: "iPhone Distribution: Thinh Xavi (R2FNHQ647W)"
+    PROFILE_NAME: "fd892037-165e-4a45-bb10-33b19025e695"
     DEPLOYGATE_API_TOKEN: 03e565e1f04a952760ce6172dfb3aace323c5051
     # P12_FILE_PASSWORD: set from web form
     
