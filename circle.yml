@@ -10,14 +10,14 @@ machine:
     PROFILE_NAME: "0615818f-3355-498b-a0ca-9ab0bdf7516f.mobileprovision"
     DEPLOYGATE_API_TOKEN: 154d6b69c2db28e518630d0c931f18fee27e50c6
     # P12_FILE_PASSWORD: set from web form
-test:
-  override:
-    - xcodebuild
-        CODE_SIGNING_REQUIRED=NO
-        # CODE_SIGN_IDENTITY=
-        # PROVISIONING_PROFILE=
-        # -project CircleCI.xcodeproj -scheme CircleCI -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
-        # clean test
+# test:
+#   override:
+#     - xcodebuild
+#         CODE_SIGNING_REQUIRED=NO
+#         CODE_SIGN_IDENTITY=
+#         PROVISIONING_PROFILE=
+#         -project CircleCI.xcodeproj -scheme CircleCI -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+#         # clean test
 
 deployment:
   deploygate:
