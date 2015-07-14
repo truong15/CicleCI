@@ -26,11 +26,11 @@ print_error()
 
 main()
 {
-    local user_name=''
-    local api_token=''
-    local file_path=''
-    local message=''
-
+    local user_name='truong15'
+    local api_token='154d6b69c2db28e518630d0c931f18fee27e50c6'
+    local file_path='/Users/thinhxavi/Desktop/CircleCI/build/CircleCI.ipa'
+    local message='Halo'
+    echo $file_path
     local option
     local OPTARG
     local OPTIND
@@ -83,7 +83,7 @@ main()
       -F "token=${api_token}" \
       -F message="${message}" \
       -F disable_notify=yes \
-      "https://deploygate.com/api/users/${user_name}/apps"
+      "https://deploygate.com/api/users/${truong15}/apps"
 }
 
 main "$@"
