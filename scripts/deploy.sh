@@ -7,15 +7,15 @@ message="Build: ${CIRCLE_BUILD_NUM}, Uploaded: $release_date"
 
 for config in "${configuration_list[@]}"; do
     output_path="$PWD/build/${config}"
-    ./scripts/build-ipa.sh \
+    ./build-ipa.sh \
         -d "$DEVELOPER_NAME" -a "$APPNAME" \
         -p "$PROFILE_NAME" \
         -t "$XCODE_TARGET" \
         -c "$config" \
         -o "$output_path"
 
-    ./scripts/upload-ipa-to-deploygate.sh \
-        -u "$DEPLOYGATE_USER_NAME" -t "$DEPLOYGATE_API_TOKEN" -m "$message" \
-        "${output_path}/${APPNAME}.ipa"
+    # ./scripts/upload-ipa-to-deploygate.sh \
+    #     -u "$DEPLOYGATE_USER_NAME" -t "$DEPLOYGATE_API_TOKEN" -m "$message" \
+    #     "${output_path}/${APPNAME}.ipa"
 done
 
