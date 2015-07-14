@@ -1,6 +1,6 @@
 #!/bin/bash
 
-configuration_list=("Release" "Adhoc")
+configuration_list=("Release")
 
 release_date=$(TZ=JST-9 date '+%Y-%m-%d %H:%M:%S')
 message="Build: ${CIRCLE_BUILD_NUM}, Uploaded: $release_date"
