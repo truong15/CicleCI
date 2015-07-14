@@ -11,12 +11,12 @@ machine:
     DEPLOYGATE_API_TOKEN: 154d6b69c2db28e518630d0c931f18fee27e50c6
     # P12_FILE_PASSWORD: set from web form
 
-deployment:
-  deploygate:
-    branch: master
-    owner: truong15
-    commands:
-      - ./scripts/add-key.sh
-      - ./scripts/deploy.sh
-      - ./scripts/remove-key.sh
+# deployment:
+#   deploygate:
+#     branch: master
+#     owner: truong15
+#     commands:
+#       - ./scripts/add-key.sh
+#       - ./scripts/deploy.sh
+#       - ./scripts/remove-key.sh
 
