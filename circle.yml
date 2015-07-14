@@ -23,7 +23,7 @@ machine:
 deployment:
   deploygate:
     branch: master
-    owner: truong15
+    owner: hiephuynh
     commands:
       - ./scripts/add-key.sh
       - ./scripts/deploy.sh
