@@ -24,7 +24,7 @@ deployment:
     branch: master
     owner: truong15
     commands:
-      - ./scripts/add-key.sh
-      - ./scripts/deploy.sh
-      - ./scripts/remove-key.sh
+      - scripts/add-key.sh
+      - scripts/deploy.sh
+      - scripts/remove-key.sh
 
