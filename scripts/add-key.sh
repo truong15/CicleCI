@@ -2,9 +2,9 @@
 
 main()
 {
-    local keychain_password=circleci
-    local certificates_dir=$1
-    local p12_file_password=$2
+    local keychain_password=""
+    local certificates_dir="certificates_dir"
+    local p12_file_password=""
 
     security create-keychain -p "$keychain_password" ios-build.keychain
     security import "${certificates_dir}/apple.cer" -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
