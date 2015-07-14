@@ -22,7 +22,7 @@ test:
 deployment:
   deploygate:
     branch: master
-    owner: xxx
+    owner: truong15
     commands:
       - ./scripts/add-key.sh
       - ./scripts/deploy.sh
