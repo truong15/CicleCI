@@ -2,7 +2,7 @@
 
 main()
 {
-    local keychain_password=1
+    local keychain_password=""
     local certificates_dir=$1
     local p12_file_password=$2
 
